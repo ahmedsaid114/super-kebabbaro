@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --btn-color:#e58f00;
+    --about-sec:#1d1d23;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* ------------loader---------------- */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .loader img{
+    width: 50%;
+    height: 50%;
+  }
+  
+  .disppear{
+    animation: vanish 5s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 3;
+      visibility: hidden;
+    }
+  }
+  
+
+/* ------------Header------------------- */
+.header {
+    padding: 1rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: #1d1d23;
+    position: sticky;
+    top: 0px;
+}
+.header .logo{
+    font-size: 25px;
+    font-weight: 10px;
+    margin-top: 17px;
+    color: #fff;
+}
+.header .logo span{
+    color: #e58f00;
+}
+.header .logo i{
+    color: rgb(168, 131, 49);
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul li{
+    list-style: none;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 17px;
+    font-size: 20px;
+    
+}
+
+nav ul a.color li{
+    color: #e58f00;
+}
+
+ .header .icons {
+    border:1px solid #e58f00 ;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 15px;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+
+ }
+ .header .icons a{
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+
+ }
+ .header .icons:hover{
+    background-color: #e58f00;
+    
+ }
+
+
+ 
+
+
+
+
+
+ /* ----------------------------menu------------------------- */
+.pizza{
+    position: relative;
+}
+.pizza h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.pizza .container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+    
+.pizza .container .right{
+    background-color: #e58f00;
+    flex: 1 1 25rem;
+    padding: .5rem;
+    border-radius: 1rem;
+
+}
+.pizza .container .right img{
+    width: 100%;
+    height: 13rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.pizza .container .right .ma1{
+    display: flex;
+    justify-content: space-between;
+}
+.pizza .container .left{
+    /* background-color: aqua; */
+    flex: 1 1 25rem;
+    padding: .5rem;
+}
+.pizza .container .left .left-top{
+background-color: #e58f00;
+padding: 1rem;
+border-radius: 1rem;
+margin-bottom: 2rem;
+}
+.pizza .container .left .left-top h2{
+ display: flex;
+ justify-content: space-between;
+}
+.pizza .container .left .left-bottom{
+background-color: #fff;
+padding: 1rem;
+border-radius: 1rem;
+margin-top: 50px;
+height: 250px;
+line-height: 13px;
+
+
+}
+.pizza .container .left .left-bottom h1{
+    font-size: 1.7rem;
+    color: red;
+    margin-bottom: 2rem;
+}
+.pizza .container .left .left-bottom h2{
+    display: flex;
+    justify-content: space-between;
+}
+.pizza .container .left .left-bottom img{
+    width: 100%;
+    height: 13rem;
+    border-radius: 1rem;
+}
+.pizza .heading{
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+    .pizza .container .img{
+        /* background-color: aqua; */
+        flex: 1 1 10rem;
+        padding: .5rem;
+    }
+    
+    /* .pizza .container .img img{
+        width: 100%;
+        height: 8.3rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        transition: .5s;
+    }
+    .pizza .container .img img:hover{
+       transform: scale(1.1);
+    } */
+    
+    
+    
+    @media (max-width:641px){
+        .pizza .container .img img{
+            width: 45%;
+            display: inline;
+            margin: .5rem;
+        }
+        .pizza span{
+            margin-left: 6rem;
+        }
+    }
+    
+    @media (max-width:394px){
+        .pizza .container .img img{
+            width: 44%;
+            display: inline;
+            margin: .5rem;
+        }
+       
+    }
+    @media (min-width:992px) and (max-width:1116px){
+        .pizza .container .img img{
+            width: 31%;
+            height: 9rem;
+            display: inline;
+            margin: .5rem;
+        }
+    }    
+
+/* end Pizza menu */
+
+
+.our-menu-food{
+    padding: 30px 7%;
+    background-color: var(--about-sec);
+}
+.our-menu-food h1{
+    color: var(--btn-color);
+    font-size: 45px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.main-menu-food{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.inner-menu-food{
+    flex: 1 1 300px;
+}
+.menu-food-content{
+    width:100%;
+
+}
+.menu-food-content img{
+    width: 100%;
+    max-height: 250px;
+}
+
+.menu-food-text{
+    padding: 2rem 2rem;
+}
+.menu-food-text h2{
+    color: var(--btn-color);
+    font-size: 30px;
+}
+.menu-food-text p{
+    color:white;
+    font-size:18px;
+    margin: 2rem 0;
+}
+
+
+.our-menu-food .main-menu-food .inner-menu-food img{
+    height: 250px;
+    background-color: #fff;
+}
+.our-menu-food .main-menu-food .inner-menu-food .menu-food-text{
+    text-align: center;
+}
+.our-menu-food .main-menu-food .inner-menu-food .menu-food-text span:hover{
+    
+    background-color: #e58f00;
+    color: #1d1d23;
+}
+
+
+
+
+
+ /* -----------------------footer---------------------*/
+.footer{
+    background: #1f2020;
+    padding: 6rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-footer{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+
+}
+
+.footer-navbar{
+    margin-top: 15px;
+}
+.footer-navbar a{
+    color: #e58f00;
+    font-size: 18px;
+    margin: 1rem;
+    padding: 1rem;
+}
+footer .main-footer span{
+    color: #e58f00;
+}
+footer .main-footer i{
+    color: rgb(168, 131, 49);
+}
+
+
